@@ -1,0 +1,1 @@
+const angle1 = document.querySelector("#angle1")
