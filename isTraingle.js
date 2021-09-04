@@ -8,20 +8,21 @@ function checkTraingle(){
         sum = sum + Number(angleValues[i].value) ;
     }
     if( sum === 180){
-        output.innerText = "It's a Traingle";
+        output.innerText = "Yayyy! The angles form a Traingle";
     }
     else{
-        output.innerText = "It's not a Traingle";
+        output.innerText = "Oops! The angles do not form a Traingle";
     }
 }
 
 
 btnCheck.addEventListener("click" ,function checkInput(){
-    if(angleValues.length === 3){
-        checkTraingle();
+    for(let i=0 ;i<angleValues.length;i++){
+        if(!angleValues[i].value){
+            output.innerText = "Please fill all the fields";
+            return 0;
+        }
     }
-    else{
-        output.innerText = "Fill all the fields";
-    }
+    checkTraingle();
 });
 
