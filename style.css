@@ -23,7 +23,8 @@ body{
 
 .navigation .nav-pills{
     display: inline;
-    padding: 1rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
 }
 
 .navigation .link{
@@ -44,11 +45,11 @@ body{
 
 main{
     text-align: center;
-    width:89%;
+    width:90%;
     margin: auto;
 }
 
-input{
+.inputDiv input{
     display: block;
     margin: auto;
     width: 300px;
@@ -56,7 +57,7 @@ input{
     padding: 0.8rem;
 }
 
-label{
+.inputDiv label{
     padding: 0.5rem;
     display: block;
     font-size: 1.3rem;
@@ -71,10 +72,57 @@ label{
 
 }
 
-#output{
+.output{
     margin: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
     border:5px solid var(--primary-color);
     border-radius: 0.5rem;
+    visibility: hidden;
+}
+
+.question-container{
+    font-size: 1.3rem;
+    text-align: left;
+    display: block;
+    margin: auto;
+    width:80%;
+}
+
+.quiz-form{
+    padding: 0.3rem;
+    margin: 1rem 0;
+}
+
+.submit-answer{
+    background-color: var(--primary-color);
+    color:var(--primary-white);
+    padding:0.8rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn-check-hypotenuse{
+    background-color: var(--primary-color);
+    color:var(--primary-white);
+    padding:0.8rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.area{
+    background-color: var(--primary-color);
+    color:var(--primary-white);
+    padding:0.8rem;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.heading{
+    margin: auto;
+    padding: 0.5rem;
+    border:3px solid var(--primary-color);
+    border-radius: 0.2rem;
 }

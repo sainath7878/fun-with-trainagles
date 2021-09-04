@@ -3,9 +3,10 @@ const quizForm = document.querySelector(".quiz-form");
 const btnSubmitAnswers = document.querySelector(".submit-answer");
 const output = document.querySelector(".output");
 
-const correctAnswers = ["90" , "right"];
+const correctAnswers = ["90" , "right","2 congruent sides","Equilateral"];
 
 function checkAnswers(){
+    output.style.visibility="visible";
     const formResults = new FormData(quizForm);
     let score = 0;
     let index = 0;

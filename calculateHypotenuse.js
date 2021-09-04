@@ -4,6 +4,7 @@ const btnCheckHypotenuse = document.querySelector(".btn-check-hypotenuse");
 const output = document.querySelector(".output");
 
 function calculateHypotenuse(){
+    output.style.visibility="visible";
     let hypotenuse = 0;
     if(side1Value.value && side2Value.value){
         hypotenuse = Math.sqrt((Number(side2Value.value) * Number(side2Value.value)) + (Number(side1Value.value) * Number(side1Value.value)));
