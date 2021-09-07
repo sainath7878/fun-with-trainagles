@@ -6,9 +6,15 @@ const btnArea = document.querySelector(".area");
 function calculateArea(){
     output.style.visibility="visible";
     if(base.value && height.value){
-        let area = 0;
-        area = Number(base.value) * Number(height.value) * 0.5;
-        output.innerHTML = "Area of the triangle is " + area + " cm<sup>2</sup>" ;
+        if(Number(base.value) > 0 && Number(height.value)){
+            let area = 0;
+            area = Number(base.value) * Number(height.value) * 0.5;
+            output.innerHTML = "Area of the triangle is " + area + " cm<sup>2</sup>" ;
+        }
+        else{
+            output.innerText = "Entered values must be positive";
+        }
+        
     }
     else{
         output.innerText = "Please fill all the fields";

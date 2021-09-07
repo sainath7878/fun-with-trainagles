@@ -25,6 +25,10 @@ btnCheck.addEventListener("click" ,function checkInput(){
             output.innerText = "Please fill all the fields";
             return 0;
         }
+        else if(angleValues[i].value <= 0){
+            output.innerText = "Please enter positive values";
+            return 0;
+        }
     }
     checkTraingle();
 });
