@@ -9,10 +9,10 @@ function checkTraingle(){
     }
     if( sum === 180){
        
-        output.innerText = "Yayyy! The angles form a Traingle";
+        output.innerText = "Yayyy! The angles form a Triangle";
     }
     else{
-        output.innerText = "Oops! The angles do not form a Traingle";
+        output.innerText = "Oops! The angles do not form a Triangle";
     }
     
 }
